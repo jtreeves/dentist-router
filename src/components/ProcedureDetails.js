@@ -1,9 +1,10 @@
 import Procedures from "./Procedures";
 
-function ProcedureDetails() {
+function ProcedureDetails(props) {
     return(
         <>
-            <h1>Procedure Details</h1>
+            <h1>{props.procedure.name}</h1>
+            <p>{props.procedure.description}</p>
         </>
     )
 }
