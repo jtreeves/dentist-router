@@ -8,13 +8,20 @@ import Nav from './components/Nav'
 import './App.css'
 
 function App() {
+    const proceduresList = ['root canal', 'crown', 'cleaning']
+    
     return (
         <BrowserRouter>
             <div className='App-header'>
                 <Nav />
                 <Route path='/' exact component={Home} />
                 <Route path='/contact' component={Contact} />
-                <Route path='/procedures' component={Procedures} />
+                <Route
+                    path='/procedures'
+                    render={() => {
+                        return <Procedures proceduresList={proceduresList} />
+                    }}
+                />
             </div>
         </BrowserRouter>
     )
