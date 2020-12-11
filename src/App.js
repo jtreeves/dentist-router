@@ -12,7 +12,7 @@ function App() {
     
     return (
         <BrowserRouter>
-            <div className='App-header'>
+            <>
                 <Nav />
                 <Route path='/' exact component={Home} />
                 <Route path='/contact' component={Contact} />
@@ -22,7 +22,7 @@ function App() {
                         return <Procedures proceduresList={proceduresList} />
                     }}
                 />
-            </div>
+            </>
         </BrowserRouter>
     )
 }
