@@ -3,9 +3,10 @@ function Procedures(props) {
         return <li>{procedure}</li>
     })
     return(
-        <ul>
-            {procedureItems}
-        </ul>
+        <>
+            <h1>Procedures</h1>
+            <ul>{procedureItems}</ul>
+        </>
     )
 }
 
