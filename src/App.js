@@ -10,9 +10,9 @@ function App() {
     return (
         <BrowserRouter>
             <div className='App-header'>
-                <Home />
-                <Contact />
-                <Procedures />
+                <Route path='/' component={Home} />
+                <Route path='/contact' component={Contact} />
+                <Route path='/procedures' component={Procedures} />
             </div>
         </BrowserRouter>
     )
