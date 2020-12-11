@@ -8,8 +8,24 @@ import Nav from './components/Nav'
 import './App.css'
 
 function App() {
-    const proceduresList = ['root canal', 'crown', 'cleaning']
-    
+    const proceduresList = [
+        {
+            id: 1,
+            name: 'Root Canal',
+            description: 'Very painful'
+        },
+        {
+            id: 2,
+            name: 'Crown',
+            description: 'Absolutely awful'
+        },
+        {
+            id: 3,
+            name: 'Cleaning',
+            description: 'Routine torture'
+        }
+    ]
+
     return (
         <BrowserRouter>
             <>
