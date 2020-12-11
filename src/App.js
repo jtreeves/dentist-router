@@ -1,9 +1,14 @@
 import './App.css'
+import Home from './components/Home'
+import Contact from './components/Contact'
+import Procedures from './components/Procedures'
 
 function App() {
     return (
         <div className='App-header'>
-            Dentist Router
+            <Home />
+            <Contact />
+            <Procedures />
         </div>
     )
 }
